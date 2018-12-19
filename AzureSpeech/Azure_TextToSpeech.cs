@@ -5,7 +5,7 @@ using System.Threading;
 
 namespace noobsmuc.AzureCognitivesServices.AzureSpeech
 {
-    public class AzureSpeech
+    public class Azure_TextToSpeech
     {
         const string UriBase = "https://westeurope.api.cognitive.microsoft.com/sts/v1.0/issueToken";
         const string RequestUri = "https://westeurope.tts.speech.microsoft.com/cognitiveservices/v1";
@@ -13,7 +13,7 @@ namespace noobsmuc.AzureCognitivesServices.AzureSpeech
         private readonly string _SubscriptionKey;
         private static string _DestinationFullFileName;
 
-        public AzureSpeech(string subscriptionKey, string destinationFullFileName)
+        public Azure_TextToSpeech(string subscriptionKey, string destinationFullFileName)
         {
             _SubscriptionKey = subscriptionKey;
             _DestinationFullFileName = destinationFullFileName;
